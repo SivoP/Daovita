@@ -34,7 +34,7 @@
     partners = Partner.create({
       name: "Avian Robotics",
       logo: "https://pbs.twimg.com/profile_images/563928668162895872/OgV7bYD9.jpeg",
-      page_url: ""
+      page_url: "http://www.avianrobotics.com/"
       })
 
 
