@@ -1,10 +1,8 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+  # THIS SEED DATA IS FOR TESTING ONLY, WILL NEED TO BE REWRITTEN WHEN WE HAVE MORE INFORMATION ABOUT OUR COMPANY AND VALIDATIONS FOR FIELDS ARE MISSING
 
   # CURRENTLY SEEDING TEAMMATES INTO DB WITH NO PROFILE PICTURE BEING USED
     teammates = Teammate.create([
@@ -31,6 +29,12 @@
       location: "Vancouver, BC",
       phone: "778-995-0965",
       email: "ideasfu@gmail.com"
+      })
+
+    partners = Partner.create({
+      name: "Avian Robotics",
+      logo: "https://pbs.twimg.com/profile_images/563928668162895872/OgV7bYD9.jpeg",
+      page_url: ""
       })
 
 
