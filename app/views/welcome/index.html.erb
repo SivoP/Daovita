@@ -121,13 +121,11 @@
           <div class="col s12 center">
             <h3><i class="material-icons large center orange-text darken-1">supervisor_account</i></h3>
             <h4>Partners</h4>
-            <p class="left-align light">List of partners with logos should go here</p>
-            <ul>
+            <ul class="partners-list">
               <% @partners.each do |partner| %>
-               <li> <%= partner.name %> <br> <img src="<%= partner.logo %>"width="250", height="250"> 
+                <li> <a href="<%= partner.page_url %>"><img src="<%= partner.logo %>"width="250", height="250"></a> </li>
               <% end %>
             </ul>
-           
           </div>
         </div>
       </div>

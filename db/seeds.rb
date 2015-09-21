@@ -31,11 +31,18 @@
       email: "ideasfu@gmail.com"
       })
 
-    partners = Partner.create({
-      name: "Avian Robotics",
-      logo: "https://pbs.twimg.com/profile_images/563928668162895872/OgV7bYD9.jpeg",
-      page_url: "http://www.avianrobotics.com/"
-      })
+    partners = Partner.create([
+        {
+          name: "Avian Robotics",
+          logo: "https://pbs.twimg.com/profile_images/563928668162895872/OgV7bYD9.jpeg",
+          page_url: "http://www.avianrobotics.com/"
+        },
+        {
+          name: "IdEA SFU",
+          logo: "https://pbs.twimg.com/profile_images/494551616427552770/Q7lbNoD0.jpeg",
+          page_url: "http://ideasfu.ca"
+        }
+      ])
 
 
      

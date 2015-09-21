@@ -1,0 +1,4 @@
+.partners-list li {
+  display: inline;
+  overflow-y: auto;
+}
