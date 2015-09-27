@@ -6,16 +6,6 @@ application up and running.
 Things you may want to cover:
 
 
-IdEA's Orange: #fe8101
-
-Models
-  -sponsors
-  -projects
-  -team members 
-  -contact
-  -resources
-  
-
 
 
 

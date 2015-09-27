@@ -1,171 +1,46 @@
-  <!-- navbar -->
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About Us </a> </li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About Us </a> </li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <!-- first parallax -->
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center orange-text text-lighten-1">IdEA Website</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Innovation x Education x Hardware</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange darken-1">Get Started</a>
-        </div>
-        <br><br>
-      </div>
-    </div>
-    <div class="parallax"><%= image_tag('parallax3dprinting.jpg') %></div>
+<!-- NAVBAR -->
+<nav> 
+  <div class="nav-wrapper green lighten-1">
+    <a href="#" class="brand-logo white-text"> DV </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="signuplink"> Sign-up </a></li>
+    </ul>
   </div>
+</nav>
+
+<div class="row">
+  <div class="col 12">
+    <h1> Welcome to Daovita </h1>
+    <a class="waves-effect waves-light btn">Sign-up here!</a>
+  </div>
+</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<!-- <footer class="page-footer green lighten-1">
   <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h2 class="center amber-text darken-4"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">This is where our excellent IdEA intro will go. For now you will here me ramble about things. Have you ever wondered if dogs know that their owners are not dogs? Or do they think they're just another, very different looking species of dog? Such questions wrestle with the deepest instances of human thought, we must answer them </p>
-          </div>
-        </div>
-
-        <div class="col s12 m6">
-          <div class="icon-block">
-           <h1 class="center"> Images go here </h1>
-            <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/p50x50/10557360_1529087513979646_4424906541829294647_n.jpg?oh=c50ed2d9dec4502e2aba6259b25a6ef8&oe=56654DD7&__gda__=1449866321_9970dc44ca1b5931776de5118147dd35">
-
-           <!--  <h2 class="center amber-text darken-4"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p> -->
-          </div>
-        </div>  
-    </div>
-  </div>
-  <div class="container">
-    <div class="section">
-      <div class="row">
-       <h2 class="center"> <strong> What's in the works </strong></h2>
+    <div class="row">
+      <div class="col 16 s12">
+        <h5 class="white-text"> Footer Content </h5>
+        <p class="grey-text text-lighten-4"> Insert footer stuff here </p>
       </div>
     </div>
   </div>
-
-
-    <div class="row projects">
-      <div class="col s12 m4">
-        <div class="card"> 
-          <div class="card-image">
-            <img src="http://bit.ly/1KYG4I6">
-            <span class="card-title"> CompassWorks </span>
-          </div>
-          <div class="card-content">
-            <p> Short description goes here </p>
-          </div>
-          <div class="card-action">
-            <a href="put link to project page here"> Link to Project </a> 
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card"> 
-          <div class="card-image">
-            <img src="http://bit.ly/1KYG4I6">
-            <span class="card-title"> Education </span>
-          </div>
-          <div class="card-content"> 
-            <p> Experiental Learning </p>
-          </div>
-          <div class="card-action">
-            <a href="paste link here"> Link to project </a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card"> 
-          <div class="card-image">
-            <img src="http://bit.ly/1KYG4I6">
-            <span class="card-title"> CSA </span>
-        </div>
-        <div class="card-content"> 
-          <p> Sustainability Analytics </p>
-        </div>
-        <div class="card-action">
-          <a href="link to project"> Link to project </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="section">
-        <div class="row">
-          <div class="col s12 center">
-            <h3><i class="material-icons large center orange-text darken-1">supervisor_account</i></h3>
-            <h4>Partners</h4>
-            <ul class="partners-list">
-              <% @partners.each do |partner| %>
-                <li> <a href="<%= partner.page_url %>"><img src="<%= partner.logo %>"width="250", height="250"></a> </li>
-              <% end %>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-        </div>
-
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-       Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
-
-  
-  
+</footer>
+ -->
